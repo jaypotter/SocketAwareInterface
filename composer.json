@@ -6,6 +6,7 @@
         "php": "^8.3"
     },
     "suggest": {
+        "potter/socket-interfaces": "dev-main",
         "potter/aware-interfaces": "dev-main",
         "potter/aware": "dev-main",
         "potter/contracts": "dev-main",
