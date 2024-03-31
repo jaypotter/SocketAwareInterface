@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Potter\Socket\Aware;
 
-use \resource, \Socket;
-
 abstract class AbstractSocketAware implements SocketAwareInterface
 {
     abstract public function bindSocket(string $address, int $port = null): void;
@@ -14,7 +12,7 @@ abstract class AbstractSocketAware implements SocketAwareInterface
     abstract public function blockSocket(): void;
     abstract public function unblockSocket(): void;
     
-    abstract public function getSocket(): resource|Socket;
+    abstract public function getSocket(): mixed;
     abstract public function hasSocket(): bool;
     
     abstract public function hasSocketError(): bool;
