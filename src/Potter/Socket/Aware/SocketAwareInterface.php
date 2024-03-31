@@ -14,4 +14,5 @@ interface SocketAwareInterface
     public function hasSocket(): bool;
     public function hasSocketError(): bool;
     public function readSocket(int $length): string;
+    public function writeSocket(string $data): void;
 }
