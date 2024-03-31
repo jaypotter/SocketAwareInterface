@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Potter\Socket\Aware;
 
+use \Socket;
+
 interface SocketAwareInterface 
 {
     public function bindSocket(string $address, int $port = null): void;
@@ -12,7 +14,7 @@ interface SocketAwareInterface
     public function blockSocket(): void;
     public function unblockSocket(): void;
     
-    public function getSocket(): mixed;
+    public function getSocket(): Socket;
     public function hasSocket(): bool;
     
     public function hasSocketError(): bool;
