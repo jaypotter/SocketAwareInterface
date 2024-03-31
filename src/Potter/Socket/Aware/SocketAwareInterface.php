@@ -20,6 +20,8 @@ interface SocketAwareInterface
     public function hasSocketError(): bool;
     
     public function readSocket(int $length): string;
+    
+    public function getLastSocketMessage(): string;
     public function readSocketMessage(): string;
     
     public function writeSocket(string $data): void;

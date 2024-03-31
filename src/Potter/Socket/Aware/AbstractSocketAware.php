@@ -20,6 +20,8 @@ abstract class AbstractSocketAware implements SocketAwareInterface
     abstract public function hasSocketError(): bool;
     
     abstract public function readSocket(int $length): string;
+    
+    abstract public function getLastSocketMessage(): string;
     abstract public function readSocketMessage(): string;
     
     abstract public function writeSocket(string $data): void;
