@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Potter\Socket\Aware;
 
-use \Socket;
+use \resource, \Socket;
 
 abstract class AbstractSocketAware implements SocketAwareInterface
 {
