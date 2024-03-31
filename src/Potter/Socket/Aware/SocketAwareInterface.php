@@ -14,7 +14,7 @@ interface SocketAwareInterface
     public function blockSocket(): void;
     public function unblockSocket(): void;
     
-    public function getSocket(): Socket;
+    public function getSocket(): resource|Socket;
     public function hasSocket(): bool;
     
     public function hasSocketError(): bool;

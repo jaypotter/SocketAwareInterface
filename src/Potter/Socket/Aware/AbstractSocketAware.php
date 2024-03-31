@@ -14,7 +14,7 @@ abstract class AbstractSocketAware implements SocketAwareInterface
     abstract public function blockSocket(): void;
     abstract public function unblockSocket(): void;
     
-    abstract public function getSocket(): Socket;
+    abstract public function getSocket(): resource|Socket;
     abstract public function hasSocket(): bool;
     
     abstract public function hasSocketError(): bool;
