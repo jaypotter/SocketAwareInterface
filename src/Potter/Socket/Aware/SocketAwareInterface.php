@@ -10,10 +10,17 @@ interface SocketAwareInterface
 {
     public function bindSocket(string $address, int $port = null): void;
     public function connectSocket(string $address, int $port = null): void;
+    
+    public function blockSocket(): void;
+    public function unblockSocket(): void;
+    
     public function getSocket(): Socket;
     public function hasSocket(): bool;
+    
     public function hasSocketError(): bool;
+    
     public function readSocket(int $length): string;
     public function readSocketMessage(): string;
+    
     public function writeSocket(string $data): void;
 }
